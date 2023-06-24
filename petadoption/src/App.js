@@ -14,7 +14,6 @@ function App() {
   return (
     <body>
       <BrowserRouter>
-        <NavComp/>
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/pet/:id" element={<PetProfilePage />}/>
