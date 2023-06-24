@@ -1,0 +1,25 @@
+* {
+    box-sizing: content-box;
+}
+
+.nav{
+    margin: auto;
+    width: 95%;
+    height: 7rem;
+    background-color: #884A39;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+    .homeIcon, .heartIcon, .messageIcon, .userIcon{
+        height: 56px;
+
+        filter: invert(100%) sepia(52%) saturate(424%) hue-rotate(359deg) brightness(109%) contrast(108%);
+        &:hover {
+            position: relative;
+            top: 10px;
+
+        }
+    }
+}
