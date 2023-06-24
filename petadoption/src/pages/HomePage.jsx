@@ -3,6 +3,7 @@ import { useState, useEffect, useRef} from "react";
 
 import axios from 'axios';
 import Nav from '../components/Nav/Nav';
+import UserInfo from '../components/UserInfo/UserInfo.jsx';
 import { Link, useParams } from "react-router-dom";
 
 // TODO: check how to impor fs in react app
@@ -27,8 +28,8 @@ function HomePage() {
             client_secret: "Xvj1Zmdgc6yZgLBLZMXNt3s5vkLORgBjCvaJZjHp",
             headers: { "Content-Type": "application/json" },
         })
-        .then( res => { 
-            // console.log(res.data.access_token)   
+        .then( res => {
+            // console.log(res.data.access_token)
             return res.data.access_token
         }
         )
@@ -50,25 +51,25 @@ function HomePage() {
         }
         )
         .catch(err => console.log(err))
-            
+
 
 
     }
     ,[]);
-  
-  
+
+
 
     return (
         <body>
             <h1>Welcome to Petfinder</h1>
             <ul>
-            <li>Userinfo</li>
+            <UserInfo/>
             <li>Categories</li>
             <li>Carousel</li>
             <Nav/>
             </ul>
         </body>
-        
+
 
     )
 }
