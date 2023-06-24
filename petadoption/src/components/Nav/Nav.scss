@@ -3,12 +3,15 @@
 }
 
 .nav{
-    width: 100%;
+    margin: auto;
+    width: 95%;
     height: 7rem;
     background-color: #884A39;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
     .homeIcon, .heartIcon, .messageIcon, .userIcon{
         height: 56px;
 
