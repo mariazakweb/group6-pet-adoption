@@ -12,16 +12,17 @@ function App() {
 
 
   return (
+
     <body>
       <BrowserRouter>
-        <NavComp/>
+        {/* <NavComp/> */}
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/pet/:id" element={<PetProfilePage />}/>
           <Route path="*" element={<HomePage/>} />
         </Routes>
       </BrowserRouter>
- 
+
 
 
 
