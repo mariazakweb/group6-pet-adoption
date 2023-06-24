@@ -51,12 +51,20 @@ function HomePage() {
 
     }
     ,[]);
-
   
   
 
     return (
-        <h1>Home Page</h1>
+        <body>
+            <h1>Welcome to Petfinder</h1>
+            <ul>
+            <li>Userinfo</li>
+            <li>Categories</li>
+            <li>Carousel</li>
+            <li>Navbar</li>
+            </ul>
+        </body>
+        
     )
 }
 
