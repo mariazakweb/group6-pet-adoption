@@ -1,10 +1,13 @@
 // HomePage
 import { useState, useEffect, useRef} from "react";
-import axios from "axios";
+
+import axios from 'axios';
+import Nav from '../components/Nav/Nav';
 import { Link, useParams } from "react-router-dom";
 
 // TODO: check how to impor fs in react app
 // import {fs} from 'fs'
+
 
 
 
@@ -49,6 +52,7 @@ function HomePage() {
         .catch(err => console.log(err))
             
 
+
     }
     ,[]);
   
@@ -61,10 +65,11 @@ function HomePage() {
             <li>Userinfo</li>
             <li>Categories</li>
             <li>Carousel</li>
-            <li>Navbar</li>
+            <Nav/>
             </ul>
         </body>
         
+
     )
 }
 
