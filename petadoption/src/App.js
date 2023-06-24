@@ -13,7 +13,7 @@ function App() {
 
   return (
 
-    <body>
+    <div>
       <BrowserRouter>
 
         {/* <NavComp/> */}
@@ -28,7 +28,7 @@ function App() {
 
 
 
-    </body>
+    </div>
   );
 
 }

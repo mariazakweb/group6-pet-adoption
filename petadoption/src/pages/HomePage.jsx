@@ -4,7 +4,10 @@ import { useState, useEffect, useRef} from "react";
 import axios from 'axios';
 import Nav from '../components/Nav/Nav';
 import UserInfo from '../components/UserInfo/UserInfo.jsx';
+import SearchBar from '../components/SearchBar/SearchBar.jsx';
 import { Link, useParams } from "react-router-dom";
+
+import './HomePage.scss';
 
 // TODO: check how to impor fs in react app
 // import {fs} from 'fs'
@@ -60,15 +63,16 @@ function HomePage() {
 
 
     return (
-        <body>
+        <div className="homePage">
             <h1>Welcome to Petfinder</h1>
             <ul>
             <UserInfo/>
+            <SearchBar/>
             <li>Categories</li>
             <li>Carousel</li>
             <Nav/>
             </ul>
-        </body>
+        </div>
 
 
     )
