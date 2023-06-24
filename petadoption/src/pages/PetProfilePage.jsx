@@ -5,10 +5,10 @@ import axios from "axios";
 function PetProfilePage(props) {
     // const [selectedPet, setSelectedPet] = useState([]);
 
-    
+
     return (
 
-        <body>
+        <div>
             <h1>Pet Name</h1>
             <ul>
                 <li>Pet Pictures Carousel</li>
@@ -17,7 +17,7 @@ function PetProfilePage(props) {
                 <li>Pet Bio</li>
                 <li>Adopt Now Button</li>
             </ul>
-        </body>
+        </div>
     )
 }
 
